@@ -1,3 +1,9 @@
+|Content|
+|-------|
+|[DC CIRCUITS](#dc-circuits)|
+|[AC CIRCUITS](#ac-circuits)|
+|[MAGNETIC CIRCUITS](#magnetic-circuits)|
+
 # DC CIRCUITS
 
 ![](20211211231832_61b531c8ab495_ac_and_dc_circuitspage0.png)
