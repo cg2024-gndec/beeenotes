@@ -329,8 +329,7 @@
 
 # Magnetic circuits
 
-
-
+![](hq720.jpg)
 
 ## **1. Comparison between Magnetic and Electric Circuits**
 
@@ -351,6 +350,8 @@ Magnetic circuits are similar to electric circuits in that they have analogies w
 ## **2. Magnetic Effects of Electric Current**
 
 - **Overview**: When electric current flows through a conductor, it creates a magnetic field around it. This effect is the basis of electromagnetism and has numerous applications in electrical engineering.
+
+![](flemings.webp)
 
 - **Right-Hand Rule**: To determine the direction of the magnetic field around a current-carrying conductor, point your thumb in the direction of the current, and your curled fingers will indicate the direction of the magnetic field lines.
 
@@ -402,6 +403,8 @@ When a current-carrying conductor is placed in an external magnetic field, it ex
 
 ## **4. Law of Electromagnetic Induction**
 
+![](emi.webp)
+
 The laws of electromagnetic induction describe how voltage is generated in a conductor moving in a magnetic field or when the magnetic flux through a conductor changes.
 
 ### **Faraday's Law of Electromagnetic Induction**
@@ -417,10 +420,14 @@ The laws of electromagnetic induction describe how voltage is generated in a con
 
 ### **Lenz's Law**
 
+![](Lenzs-Law-of-Electromagnetic-Induction.webp)
+
 - The direction of induced EMF is such that it opposes the change in magnetic flux that produced it. This is reflected in the negative sign in Faraday's law.
 
 
 ## **5. Self-Inductance**
+
+![](hqdefault.jpg)
 
 ### **Definition**
 
@@ -444,6 +451,8 @@ The laws of electromagnetic induction describe how voltage is generated in a con
   $$
 
 ## **6. Mutual Inductance**
+
+![](Mutual-Inductance-between-Coils.jpg)
 
 ### **Definition**
 
@@ -484,6 +493,8 @@ Electrical machines are devices that convert energy from electrical to mechanica
 
 ### **8.1 Single-Phase Transformer**
 
+![](single-phase-transformer-mbt.png)
+
 #### **Construction**
 
 A single-phase transformer consists of two windings, primary and secondary, wound on a magnetic core:
@@ -521,6 +532,8 @@ where $$ V_1 $$ and $$ V_2 $$ are the voltages and $$ N_1 $$ and $$ N_2 $$ are t
 ### **8.2 D.C. Machines (Motors and Generators)**
 
 ### **DC Motor**
+
+![](DC-Motor-3.png)
 
 #### **Construction**
 
@@ -560,6 +573,8 @@ $$
 
 ### **DC Generator**
 
+![](tc.png)
+
 #### **Construction**
 
 The DC generator has components similar to a DC motor:
@@ -597,6 +612,8 @@ where $$ P $$ is the number of poles, $$ N $$ is the speed in RPM, $$ \Phi $$ is
 
 ### **8.3 Three-Phase Induction Motor**
 
+![](Construction-of-Three-Phase-Induction-Motor-(1).png)
+
 ### **Construction**
 
 1. **Stator**: Stationary part with three-phase windings. When supplied with AC, these windings create a rotating magnetic field.
@@ -627,6 +644,8 @@ $$
 
 ### **Synchronous Motor**
 
+![](synchorousmotor.png)
+
 #### **Construction**
 
 1. **Stator**: Three-phase windings in the stator create a rotating magnetic field when supplied with AC.
@@ -648,6 +667,8 @@ Since the rotor is excited with DC, it creates a constant magnetic field. The ro
 - **Constant-Speed Drives**: Synchronous motors are ideal for applications that require constant speed, such as compressors, blowers, and centrifugal pumps.
 
 ### **Synchronous Generator**
+
+![](synchronousgenerator.png)
 
 #### **Construction**
 
