@@ -4,7 +4,7 @@
 |[AC CIRCUITS](#ac-circuits)|
 |[MAGNETIC CIRCUITS](#magnetic-circuits)|
 |[DIGITAL ELECTRONICS](#digital-electronics)|
-|[SEMICONDUCTORS](#semiconductors)|
+|[SEMICONDUCTORS](#semiconductor)|
 |[TRANSISTORS](#transistors)|
 
 # DC CIRCUITS
