@@ -778,24 +778,28 @@ where $$ N $$ is the rotor speed in RPM, and $$ P $$ is the number of poles.
 ![](digitalelectronics.jpeg)
 
 #### **1. Binary Number System**
+
 - **Base**: 2
 - **Digits**: Only 0 and 1 are used.
 - **Use**: Primarily used in digital electronics and computing.
 - **Example**: $$1101_2$$ (binary) = $$1 \times 2^3 + 1 \times 2^2 + 0 \times 2^1 + 1 \times 2^0 = 13_{10}$$ (decimal).
 
 #### **2. Decimal Number System**
+
 - **Base**: 10
 - **Digits**: 0 to 9.
 - **Use**: Standard number system for daily use.
 - **Example**: $$249_{10}$$ is a decimal number.
 
 #### **3. Octal Number System**
+
 - **Base**: 8
 - **Digits**: 0 to 7.
 - **Use**: Sometimes used in digital systems to represent binary numbers more compactly.
 - **Example**: $$345_8 = 3 \times 8^2 + 4 \times 8^1 + 5 \times 8^0 = 229_{10}$$ (decimal).
 
 #### **4. Hexadecimal Number System**
+
 - **Base**: 16
 - **Digits**: 0 to 9 and A (10) to F (15).
 - **Use**: Common in computing to represent large binary numbers compactly.
@@ -805,18 +809,22 @@ where $$ N $$ is the rotor speed in RPM, and $$ P $$ is the number of poles.
 ## **Conversions Between Number Systems**
 
 #### **1. Binary to Decimal**
+
 - Multiply each binary digit by \(2^{\text{position}}\) and add them up.
 - Example: $$1011_2 = 1 \times 2^3 + 0 \times 2^2 + 1 \times 2^1 + 1 \times 2^0 = 11_{10}$$.
 
 #### **2. Decimal to Binary**
+
 - Divide the decimal number by 2, record the remainder, and continue dividing until you reach 0. The binary representation is the remainders read from bottom to top.
 - Example: $$13_{10}$$ in binary is $$1101_2$$.
 
 #### **3. Binary to Octal**
+
 - Group the binary number into sets of 3 bits (starting from the right), then convert each set to its octal equivalent.
 - Example: $$110101_2$$ becomes $$110\text{ }101$$ which is $$65_8$$.
 
 #### **4. Binary to Hexadecimal**
+
 - Group the binary number into sets of 4 bits (starting from the right) and convert each set to its hexadecimal equivalent.
 - Example: $$11110111_2$$ becomes $$1111\text{ }0111$$, which is $$F7_{16}$$.
 
@@ -927,7 +935,7 @@ where $$ N $$ is the rotor speed in RPM, and $$ P $$ is the number of poles.
   - $$0 + 0 = 0$$
   - $$0 + 1 = 1$$
   - $$1 + 0 = 1$$
-  - $$1 + 1 = 0$$ (carry 1)
+  - $$1 + 1 = 0 \text{ }\text{(carry 1)}$$
 - **Example**: $$1011 + 1101 = 11000$$.
 
 #### **2. Binary Subtraction**
@@ -935,14 +943,16 @@ where $$ N $$ is the rotor speed in RPM, and $$ P $$ is the number of poles.
   - $$0 - 0 = 0$$
   - $$1 - 0 = 1$$
   - $$1 - 1 = 0$$
-  - $$0 - 1 = 1$$ (borrow 1)
-- **Example**: $41010 - 0110 = 0100$$.
+  - $$0 - 1 = 1 \text{ } \text{(borrow 1)}$$
+- **Example**: $$1010 - 0110 = 0100$$.
 
 #### **3. 1’s Complement**
+
 - **Definition**: Invert each bit of the binary number (0 becomes 1, 1 becomes 0).
 - **Example**: 1’s complement of $$1010$$ is $$0101$$.
 
 #### **4. 2’s Complement**
+
 - **Definition**: Invert each bit and add 1 to the result. Used to represent negative binary numbers.
 - **Example**: 2’s complement of $$1010$$ is $$0110$$.
 
