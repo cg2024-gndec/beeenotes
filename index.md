@@ -3,6 +3,9 @@
 |[DC CIRCUITS](#dc-circuits)|
 |[AC CIRCUITS](#ac-circuits)|
 |[MAGNETIC CIRCUITS](#magnetic-circuits)|
+|[DIGITAL ELECTRONICS](#digital-electronics)|
+|[SEMICONDUCTORS](#semiconductors)|
+|[TRANSISTORS](#transistors)|
 
 # DC CIRCUITS
 
@@ -768,9 +771,216 @@ where $$ N $$ is the rotor speed in RPM, and $$ P $$ is the number of poles.
 
 
 
+---<!--Digital starts-->
+
+# **DIGITAL ELECTRONICS**
+
+![](digitalelectronics.jpeg)
+
+#### **1. Binary Number System**
+- **Base**: 2
+- **Digits**: Only 0 and 1 are used.
+- **Use**: Primarily used in digital electronics and computing.
+- **Example**: $$1101_2$$ (binary) = $$1 \times 2^3 + 1 \times 2^2 + 0 \times 2^1 + 1 \times 2^0 = 13_{10}$$ (decimal).
+
+#### **2. Decimal Number System**
+- **Base**: 10
+- **Digits**: 0 to 9.
+- **Use**: Standard number system for daily use.
+- **Example**: $$249_{10}$$ is a decimal number.
+
+#### **3. Octal Number System**
+- **Base**: 8
+- **Digits**: 0 to 7.
+- **Use**: Sometimes used in digital systems to represent binary numbers more compactly.
+- **Example**: $$345_8 = 3 \times 8^2 + 4 \times 8^1 + 5 \times 8^0 = 229_{10}$$ (decimal).
+
+#### **4. Hexadecimal Number System**
+- **Base**: 16
+- **Digits**: 0 to 9 and A (10) to F (15).
+- **Use**: Common in computing to represent large binary numbers compactly.
+- **Example**: $$2F3_{16} = 2 \times 16^2 + F \times 16^1 + 3 \times 16^0 = 755_{10}$$ (decimal).
 
 
+## **Conversions Between Number Systems**
 
+#### **1. Binary to Decimal**
+- Multiply each binary digit by \(2^{\text{position}}\) and add them up.
+- Example: $$1011_2 = 1 \times 2^3 + 0 \times 2^2 + 1 \times 2^1 + 1 \times 2^0 = 11_{10}$$.
+
+#### **2. Decimal to Binary**
+- Divide the decimal number by 2, record the remainder, and continue dividing until you reach 0. The binary representation is the remainders read from bottom to top.
+- Example: $$13_{10}$$ in binary is $$1101_2$$.
+
+#### **3. Binary to Octal**
+- Group the binary number into sets of 3 bits (starting from the right), then convert each set to its octal equivalent.
+- Example: $$110101_2$$ becomes $$110\text{ }101$$ which is $$65_8$$.
+
+#### **4. Binary to Hexadecimal**
+- Group the binary number into sets of 4 bits (starting from the right) and convert each set to its hexadecimal equivalent.
+- Example: $$11110111_2$$ becomes $$1111\text{ }0111$$, which is $$F7_{16}$$.
+
+## **Logic Gates**
+
+#### **1. AND Gate**
+
+![](andgate.png)
+
+- **Symbol**: D-shaped symbol with inputs on the left and output on the right.
+- **Truth Table**:
+ 
+|**A**|**B**|**Y**|
+|:---:|:---:|:---:|
+| 0 | 0 | 0 |
+| 0 | 1 | 0 |
+| 1 | 0 | 0 |
+| 1 | 1 | 1 |
+
+#### **2. OR Gate**
+
+![](orgate.jpeg)
+
+- **Symbol**: Curved shape with inputs on the left and output on the right.
+- **Truth Table**:
+ 
+|**A**|**B**|**Y**|
+|:---:|:---:|:---:|
+| 0 | 0 | 0 |
+| 0 | 1 | 1 |
+| 1 | 0 | 1 |
+| 1 | 1 | 1 |
+
+#### **3. NOT Gate**
+
+![](notgate.jpeg)
+
+- **Symbol**: Triangle with a small circle on the output side.
+- **Truth Table**:
+
+|**A**|**Y**|
+|:---:|:---:|
+| 0 | 1 |
+| 1 | 0 |
+
+
+#### **4. EX-OR (Exclusive OR) Gate**
+
+![](XOR-gate-circuit-calculation.webp)
+
+- **Symbol**: Curved shape with an additional input line.
+- **Truth Table**:
+
+|**A**|**B**|**Y**|
+|:---:|:---:|:---:|
+| 0 | 0 | 0 |
+| 0 | 1 | 1 |
+| 1 | 0 | 1 |
+| 1 | 1 | 0 |
+
+#### **5. EX-NOR (Exclusive NOR) Gate**
+
+![](xnorgate.png)
+
+- **Symbol**: Curved shape with additional input line and a small circle at the output.
+- **Truth Table**:
+
+|**A**|**B**|**Y**|
+|:---:|:---:|:---:|
+| 0 | 0 | 1 |
+| 0 | 1 | 0 |
+| 1 | 0 | 0 |
+| 1 | 1 | 1 |
+
+#### **6. Universal Gates**
+
+- **NAND Gate**: Can be used to implement all other logic gates.
+
+![](nandgate.jpeg)
+
+  - Truth Table:
+
+|**A**|**B**|**Y**|
+|:---:|:---:|:---:|
+| 0 | 0 | 1 |
+| 0 | 1 | 1 |
+| 1 | 0 | 1 |
+| 1 | 1 | 0 |
+
+- **NOR Gate**: Also capable of implementing all other logic gates.
+
+![](norgate.jpg)
+
+  - Truth Table:
+
+|**A**|**B**|**Y**|
+|:---:|:---:|:---:|
+| 0 | 0 | 1 |
+| 0 | 1 | 0 |
+| 1 | 0 | 0 |
+| 1 | 1 | 0 |
+
+
+## **Binary Arithmetic**
+
+#### **1. Binary Addition**
+- **Rules**:
+  - $$0 + 0 = 0$$
+  - $$0 + 1 = 1$$
+  - $$1 + 0 = 1$$
+  - $$1 + 1 = 0$$ (carry 1)
+- **Example**: $$1011 + 1101 = 11000$$.
+
+#### **2. Binary Subtraction**
+- **Rules**:
+  - $$0 - 0 = 0$$
+  - $$1 - 0 = 1$$
+  - $$1 - 1 = 0$$
+  - $$0 - 1 = 1$$ (borrow 1)
+- **Example**: $41010 - 0110 = 0100$$.
+
+#### **3. 1’s Complement**
+- **Definition**: Invert each bit of the binary number (0 becomes 1, 1 becomes 0).
+- **Example**: 1’s complement of $$1010$$ is $$0101$$.
+
+#### **4. 2’s Complement**
+- **Definition**: Invert each bit and add 1 to the result. Used to represent negative binary numbers.
+- **Example**: 2’s complement of $$1010$$ is $$0110$$.
+
+
+## **Applications of Logic Gates**
+
+#### **1. Half Adder**
+
+![](half-adder-truth-table-schematic-realization.png)
+
+- **Function**: Adds two single-bit binary numbers.
+- **Components**: Consists of an **XOR gate** for the sum and an **AND gate** for the carry.
+- **Truth Table**:
+
+|**A**|**B**|**Sum**|**Carry**|
+|:---:|:---:|:-----:|:-------:|
+| 0 | 0 | 0 | 0 |
+| 0 | 1 | 1 | 0 |
+| 1 | 0 | 1 | 0 |
+| 1 | 1 | 0 | 1 |
+
+#### **2. Full Adder**
+
+![](fulhadder.jpg)
+
+- **Function**: Adds two single-bit binary numbers with a carry-in.
+- **Components**: Two **XOR gates**, two **AND gates**, and one **OR gate**.
+- **Truth Table**:
+
+|**A**|**B**|**Cin**|**Sum**|**Carry**|
+|:---:|:---:|:-----:|:-----:|:-------:|
+| 0 | 0 | 0 | 0 | 0 |
+| 0 | 1 | 0 | 1 | 0 |
+| 1 | 0 | 0 | 1 | 0 |
+| 1 | 1 | 1 | 0 | 1 |
+
+---
+<!--Digital ends-->
 
 # SEMICONDUCTOR
 
@@ -880,4 +1090,124 @@ Diodes play critical roles in various applications due to their ability to contr
 ---
 
 These notes provide detailed insight into the functionality, construction, and applications of these semiconductor devices and diodes. 
+
+
+<!--Transistor chapter begin-->
+# **Transistors**
+
+![](transistors.jpeg)
+
+#### **1. Introduction to Transistors**
+- **Definition**: A transistor is a three-layer semiconductor device that amplifies or switches electronic signals. Transistors are fundamental components in modern electronics, controlling large currents with a small input signal.
+- **History**: Invented in 1947 by John Bardeen, Walter Brattain, and William Shockley at Bell Labs. The transistor replaced vacuum tubes and led to the miniaturization of electronic circuits.
+- **Applications**: Used in amplifiers, switches, signal modulation, and various electronic devices.
+
+#### **2. Construction of Transistors**
+- **Semiconductor Material**: Made of either silicon or germanium, doped to create N-type (negative) or P-type (positive) materials.
+
+- **NPN Transistor**: Has two N-type layers with a P-type layer in between.
+  - **Flow of Electrons**: Electrons are the majority charge carriers, moving from emitter to collector through the base.
+- **PNP Transistor**: Has two P-type layers with an N-type layer in between.
+  - **Flow of Holes**: Holes (absence of electrons) are the majority charge carriers, moving from emitter to collector.
+- **Terminals**:
+  - **Emitter (E)**: Strongly doped region that emits majority charge carriers (electrons in NPN and holes in PNP).
+  - **Base (B)**: Thin, lightly doped central region that controls the transistor’s operation.
+  - **Collector (C)**: Moderately doped region that collects charge carriers from the emitter through the base.
+
+#### **3. Working Principle of Transistors**
+- **Biasing**: A transistor’s operation depends on how the PN junctions are biased:
+  - **Forward-Biased Emitter-Base Junction**: Allows carriers to be injected into the base.
+  - **Reverse-Biased Collector-Base Junction**: Allows carriers to be collected at the collector.
+- **Current Flow in NPN Transistor**:
+  - When a small input current flows into the base, it allows a larger current to flow from the collector to the emitter.
+- **Current Flow in PNP Transistor**:
+  - When a small current flows out of the base, it allows a larger current to flow from the emitter to the collector.
+
+#### **4. Characteristics of Transistors**
+- **Input Characteristics**: Shows the relationship between the base current (IB) and the base-emitter voltage (VBE) with constant collector-emitter voltage (VCE).
+- **Output Characteristics**: Shows the relationship between the collector current (IC) and the collector-emitter voltage (VCE) with constant base current (IB).
+- **Transfer Characteristics**: Shows the relationship between the collector current (IC) and the base current (IB) with constant collector-emitter voltage (VCE).
+  
+### **NPN and PNP Transistors**
+
+#### **NPN Transistor**:
+
+![](download.png)
+
+- **Symbol**: Arrow on the emitter pointing outwards.
+- **Current Flow**: Electrons flow from the emitter (negative terminal) to the collector.
+- **Common Usage**: More widely used due to electron mobility, making NPN transistors generally faster.
+
+#### **PNP Transistor**:
+
+![](pnp.png)
+
+- **Symbol**: Arrow on the emitter pointing inward.
+- **Current Flow**: Holes flow from the emitter (positive terminal) to the collector.
+- **Common Usage**: Used in specific configurations where a positive emitter supply is needed.
+
+### **Basic Configurations**
+
+1. **Common Emitter (CE)**:
+   - **Configuration**: Emitter is common to both input and output circuits.
+   - **Characteristics**: Provides high gain for both voltage and current; commonly used in amplifiers.
+   - **Applications**: Amplifiers, signal processing.
+
+2. **Common Base (CB)**:
+   - **Configuration**: Base is common to both input and output circuits.
+   - **Characteristics**: Provides low input impedance and high output impedance; used for high-frequency applications.
+   - **Applications**: RF amplifiers, high-speed switching.
+
+3. **Common Collector (CC)**:
+   - **Configuration**: Collector is common to both input and output circuits.
+   - **Characteristics**: Provides high input impedance and low output impedance; known as an emitter follower.
+   - **Applications**: Impedance matching, buffer stages.
+
+### **Transistor as an Amplifier**
+- **Basic Principle**: Small input signal applied to the base results in a larger output signal at the collector.
+- **Voltage Gain**: Amplification factor depends on the transistor’s configuration and load resistance.
+- **Applications**: Used in audio amplifiers, radio transmitters, and many other applications where signal amplification is required.
+
+### **Transistor as a Switch**
+- **Switching States**:
+  - **Cut-off Region**: Transistor is OFF; no current flows from collector to emitter.
+  - **Saturation Region**: Transistor is ON; maximum current flows, acting as a closed switch.
+- **Applications**: Widely used in digital circuits and microcontrollers to control LEDs, relays, and other components.
+
+---
+
+### **Operational Amplifier (Op-Amp)**
+
+#### **Schematic Symbol**
+- **Symbol**: Represented by a triangle with two input terminals and one output terminal. The positive input terminal is marked with (+) and the negative input terminal with (−).
+- **Terminals**:
+  - **Inverting Input (−)**: Input terminal where the phase of the input signal is inverted.
+  - **Non-Inverting Input (+)**: Input terminal where the phase of the input signal remains the same.
+  - **Output**: Delivers the amplified signal based on the difference between the inputs.
+
+![](opamp-block-diagram.jpg)
+
+#### **Block Diagram of an Op-Amp**
+- **Input Stage**: Typically a differential amplifier that amplifies the difference between inverting and non-inverting inputs.
+- **Intermediate Stage**: Amplifies the output of the input stage.
+- **Voltage Gain Stage**: Boosts the signal further.
+- **Output Stage**: Provides low output impedance, allowing the op-amp to drive loads effectively.
+
+#### **Ideal Op-Amp Characteristics**
+- **Infinite Input Impedance (Zin)**: No current flows into the input terminals.
+- **Zero Output Impedance (Zout)**: Can drive any load without losing signal strength.
+- **Infinite Open-Loop Gain (A)**: Amplifies even a small difference between input terminals infinitely.
+- **Infinite Bandwidth**: Can amplify any frequency signal without attenuation.
+- **Zero Offset Voltage**: Output is zero when the input difference is zero.
+
+![](097f7e8b2f524e097c33ce0290345101.jpg)
+
+#### **Ideal Voltage Transfer Curve**
+- The voltage transfer curve of an ideal op-amp shows the relationship between the input differential voltage (Vd = V+ − V−) and the output voltage (Vout).
+  - **Linear Region**: Small differential input voltage results in proportional output voltage.
+  - **Saturation Region**: For larger input differences, the output reaches maximum positive or negative supply voltage.
+
+<!--tRansistor chapetr end-->
+
+---
 
