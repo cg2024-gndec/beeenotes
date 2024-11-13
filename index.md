@@ -765,3 +765,119 @@ where $$ N $$ is the rotor speed in RPM, and $$ P $$ is the number of poles.
 - **Alternators in Vehicles**: Provide electrical power to vehicle electrical systems.
 
 ---
+
+
+
+
+
+
+
+# SEMICONDUCTOR
+
+![](header.jpg)
+
+## **1. Semiconductors: Intrinsic and Extrinsic**
+
+**Semiconductors** are foundational materials in electronics because their conductivity can be precisely controlled by modifying the number of charge carriers (electrons and holes).
+
+### **Intrinsic Semiconductors**
+- **Pure Form:** In intrinsic (or pure) semiconductors, there are no added impurities. Silicon (Si) and germanium (Ge) are typical examples. Each atom in these crystals shares electrons with neighboring atoms, forming covalent bonds.
+- **Electron-Hole Pair Creation:** At room temperature, thermal energy excites electrons from the valence band (where they are tightly bound to atoms) to the conduction band (where they can move freely). This leaves behind "holes" in the valence band, which act as positive charge carriers.
+- **Energy Band Structure:** In semiconductors, the energy gap (band gap) between the valence and conduction bands is small (around 1.1 eV for silicon), allowing thermal excitation of electrons.
+- **Carrier Concentration:** In intrinsic semiconductors, the concentration of electrons ($$n_i$$ ) and holes ( $$p_i$$ ) is equal, given by the intrinsic carrier concentration ( $$n_i$$ ), which depends on temperature and the band gap:
+
+  $$
+  n_i = p_i = \sqrt{N_C \times N_V}e^{-\frac{E_g}{2kT}}
+  $$
+
+  where ( $$N_C$$) and ( $$N_V $$) are effective density of states in conduction and valence bands, ( $$E_g$$ ) is the energy gap, ( $$k$$ ) is Boltzmann's constant, and ( $$T$$ ) is temperature.
+
+### **Extrinsic Semiconductors**
+
+- **Doping Process:** Doping introduces impurities to create an imbalance of electrons and holes, increasing conductivity. Two types of dopants are used:
+  - **Donor Impurities (N-type):** Pentavalent atoms (e.g., phosphorus) are added to silicon. These atoms have an extra electron, which becomes a free electron, making electrons the majority carriers.
+  - **Acceptor Impurities (P-type):** Trivalent atoms (e.g., boron) are added, creating a hole by accepting an electron from silicon atoms, making holes the majority carriers.
+- **Carrier Concentration in Doped Materials:** The concentration of electrons or holes in extrinsic semiconductors is dominated by the dopant atoms, typically in the range of ($$10^{15}$$) to ($$10^{18}$$) ($$cm^{-3}$$), far higher than in intrinsic silicon.
+
+## **2. PN Junction Diode: Working and V-I Characteristics**
+
+![](diode7.webp)
+![](diode5.webp)
+
+A **PN junction diode** allows current to flow easily in one direction when forward biased, but blocks it when reverse biased.
+
+### **Formation of PN Junction and Depletion Region**
+
+- **Contact of P-type and N-type:** When P-type and N-type semiconductors are brought into contact, electrons from the N-region move to the P-region, while holes from the P-region move to the N-region. This creates an area devoid of charge carriers, known as the **depletion region**.
+- **Electric Field in the Depletion Region:** The movement of carriers leaves behind immobile ions (negative ions in the P-region and positive ions in the N-region), generating an electric field (or built-in potential) that opposes further diffusion of carriers.
+- **Equilibrium:** At equilibrium, this electric field balances the diffusion of carriers, leading to a stable depletion region and a built-in potential (typically 0.7V for silicon and 0.3V for germanium).
+
+### **Biasing the PN Junction**
+
+1. **Forward Bias:**
+
+![](diode-diode7.webp)
+
+   - Applying positive voltage to the P-side and negative to the N-side reduces the width of the depletion region.
+   - At a certain threshold voltage (approximately 0.7V for silicon), the barrier is reduced enough to allow current to flow.
+
+2. **Reverse Bias:**
+
+![](diode-diode6.webp)
+   - Applying positive voltage to the N-side increases the depletion width, strengthening the barrier.
+   - Only a small leakage current flows due to minority carriers, and this remains constant until breakdown voltage is reached.
+  
+### **V-I Characteristics**
+
+![](diode-diode36.webp)
+![](diode-diode10.webp)
+
+- **Forward Region (Exponential Increase):** Current increases exponentially with forward voltage once it crosses the threshold.
+- **Reverse Region:** Little to no current flows under reverse bias. At high reverse voltages, the diode undergoes breakdown (avalanche or Zener breakdown, depending on design), allowing large reverse current.
+
+## **3. Diode Applications**
+
+Diodes play critical roles in various applications due to their ability to control the direction of current flow.
+
+- **Rectification:** Converts AC (alternating current) into DC (direct current), often in power supplies.
+  - **Half-Wave Rectifier:** Uses one diode to pass only one-half of the AC cycle.
+
+![](Half-Wave-Rectifier.jpg)
+
+  - **Full-Wave Rectifier:** Uses multiple diodes in a bridge configuration to pass both halves of the AC cycle, giving higher DC output.
+
+![](e2.png)
+
+- **Clipping Circuits:** Protect sensitive circuits by "clipping" voltage to a desired level.
+- **Voltage Multipliers:** Combining diodes with capacitors, it generates high voltage from a lower AC input.
+
+## **4. Special Diodes**
+
+### **Light Emitting Diode (LED)**
+
+![](cross-section-LED.jpg)
+
+- **Structure and Principle:** An LED is a diode made of semiconductor material with a direct band gap (like gallium arsenide), which emits light when electrons recombine with holes.
+- **Energy Emission:** The energy released in recombination is emitted as a photon, with the energy (and hence color) determined by the bandgap.
+- **Applications:** Used in displays, lighting, and indicators due to their efficiency and range of colors.
+
+### **Photodiode**
+
+![](Photodiode-Working.webp)
+
+- **Operating Principle:** Operates in reverse bias; when light falls on the depletion region, it generates electron-hole pairs, increasing the reverse current.
+- **Responsiveness:** The photocurrent is proportional to light intensity, making photodiodes ideal for light-sensitive applications.
+- **Applications:** Solar cells, light sensors, and optical communication receivers.
+
+### **Zener Diode as Voltage Regulator**
+
+![](tuBgfKz.png)
+
+- **Design and Breakdown Voltage:** A Zener diode is designed to have a precise breakdown voltage (e.g., 5.1V). It operates in reverse bias, maintaining a stable voltage once the breakdown voltage is reached.
+- **Voltage Regulation Mechanism:** When reverse bias exceeds the Zener breakdown voltage, the diode conducts in reverse, maintaining a constant voltage.
+- **Applications:** Used to stabilize voltage in power supplies and as a reference voltage in circuits.
+
+---
+
+These notes provide detailed insight into the functionality, construction, and applications of these semiconductor devices and diodes. 
+
