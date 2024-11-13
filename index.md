@@ -67,9 +67,11 @@
 ![](stardelta.jpeg)
 
 #### **4.1 Star (Y) to Delta (Δ) Conversion**
+
 - Used to simplify networks that cannot be reduced by series-parallel combinations.
 
   **Formulas**:
+
   - $$ R_{AB} = \frac{R_1 R_2 + R_2 R_3 + R_3 R_1}{R_1} $$
   - $$ R_{BC} = \frac{R_1 R_2 + R_2 R_3 + R_3 R_1}{R_2} $$
   - $$ R_{CA} = \frac{R_1 R_2 + R_2 R_3 + R_3 R_1}{R_3} $$
@@ -77,6 +79,7 @@
 #### **4.2 Delta (Δ) to Star (Y) Conversion**
 
   **Formulas**:
+  
   - $$ R_1 = \frac{R_{AB} R_{CA}}{R_{AB} + R_{BC} + R_{CA}} $$
   - $$ R_2 = \frac{R_{AB} R_{BC}}{R_{AB} + R_{BC} + R_{CA}} $$
   - $$ R_3 = \frac{R_{BC} R_{CA}}{R_{AB} + R_{BC} + R_{CA}} $$
@@ -85,13 +88,16 @@
 ## **5. Ohm’s Law**
 
 #### **Statement**
+
 - **Definition**: The current $$I$$ through a conductor between two points is directly proportional to the voltage $$V$$ across the points, with resistance $$R$$ as a constant.
 - **Formula**: $$ V = I \times R $$
 
 #### **Power in Resistive Circuits**:
+
 - $$ P = V \times I = I^2 R = \frac{V^2}{R} $$
 
 #### **Limitations of Ohm’s Law**
+
 - Only valid for **linear** (ohmic) conductors where current is directly proportional to voltage.
 - Resistance in some materials (e.g., semiconductors) may vary with temperature, so Ohm’s law does not apply to non-linear devices like diodes.
 
@@ -99,11 +105,13 @@
 ## **6. Units: Work, Power, and Energy**
 
 #### **6.1 Work (W)**
+
 - **Definition**: Work in an electric circuit is the energy transferred by an electric charge moving under the influence of voltage.
 - **Formula**: $$ W = V \times I \times t $$
 - **Unit**: Joules $$(J)$$.
 
 #### **6.2 Power (P)**
+
 - **Definition**: Power is the rate of energy consumption or the rate at which work is done in a circuit.
 - **Formula**:
   - Electrical Power: $$ P = V \times I $$
@@ -111,11 +119,13 @@
 - **Unit**: Watts $$(W)$$.
 
 #### **6.3 Energy (E)**
+
 - **Definition**: Energy is the capacity to do work.
 - **Formula**: $$ E = P \times t $$
 - **Unit**: Joules (J) or Watt-seconds (Ws) in electrical energy contexts.
 
 **Types of Energy in Electrical Engineering**:
+
 - **Electrical Energy**: Energy used by electrical devices, $$ E = P \times t $$
 - **Thermal Energy**: Heat energy produced, often in resistive elements.
 - **Mechanical Energy**: Energy associated with moving parts or rotating machinery (e.g., motors).
@@ -139,6 +149,7 @@
   $$v(t) = V_{\text{max}} \sin(\omega t + \phi)$$
   
   where:
+
   - $$ v(t) $$ is the instantaneous voltage at time $$ t $$,
   - $$ V_{\text{max}} $$ is the peak voltage (also called **amplitude**),
   - $$ \omega = 2\pi f $$ is the angular frequency, where $$f$$ is the frequency in Hz,
@@ -147,12 +158,15 @@
 #### **1.2 Frequency and Time Period**
 
 - **Frequency** ($$ f $$): The number of complete cycles of the AC waveform that occur in one second. The unit is **hertz (Hz)**.
+
   $$
   f = \frac{1}{T}
   $$
   
   where $$ T $$ is the time period (the time taken to complete one full cycle).
+
 - **Time Period** ($$ T $$): The duration of one cycle of the waveform, given by:
+
   $$
   T = \frac{1}{f}
   $$
@@ -170,23 +184,29 @@
 
 - The **RMS value** is the equivalent DC value that would produce the same power dissipation in a resistive load as the AC current.
 - For a sinusoidal waveform:
+
   $$
   V_{\text{RMS}} = \frac{V_{\text{peak}}}{\sqrt{2}} \quad \text{and} \quad I_{\text{RMS}} = \frac{I_{\text{peak}}}{\sqrt{2}}
   $$
+
   - **Formula for RMS of sinusoidal current**: 
+
     $$
     I_{\text{RMS}} = \frac{I_{\text{peak}}}{\sqrt{2}}
     $$
+
   - **RMS voltage**: If $$ V_{\text{peak}} = 10 \text{ V} $$, then $$ V_{\text{RMS}} = \frac{10}{\sqrt{2}} \approx 7.07 \text{ V} $$.
 
 #### **2.3 Average Value**
 
 - The **average value** is the arithmetic mean of all the instantaneous values of a waveform over a complete cycle. 
 - For a sinusoidal waveform, the average value of the positive half-cycle is:
+
   $$
   V_{\text{avg}} = \frac{2}{\pi} V_{\text{peak}} \approx 0.637 V_{\text{peak}}
   $$
-  - For a sine wave, the average value for one complete cycle (which is zero due to symmetry) is considered for the positive half-cycle.
+
+   - For a sine wave, the average value for one complete cycle (which is zero due to symmetry) is considered for the positive half-cycle.
 
 
 ## **3. Phasor Representation of Alternating Quantities**
@@ -198,9 +218,11 @@
 - A **phasor** is a complex number that represents a sinusoidal waveform in the form of a rotating vector in the complex plane.
 - The phasor notation simplifies the analysis of AC circuits by representing the magnitude and phase of voltages and currents.
 - **Phasor Form**: A sinusoidal voltage or current can be written as:
+
   $$
   v(t) = V_{\text{peak}} \sin(\omega t + \phi) \quad \text{is represented by the phasor} \quad V = V_{\text{peak}} \angle \phi
   $$
+
   where $$ \angle \phi $$ is the phase angle.
 
 #### **3.2 Phasor Notation**
@@ -215,10 +237,13 @@
 #### **4.1 Ohm’s Law for AC Circuits**
 
 - Ohm's law in AC circuits states that the **voltage** across a component is equal to the **current** through it times the **impedance** of the component.
+
   $$
   V = I \times Z
   $$
+
   where:
+
   - $$ V $$ is the voltage across the component,
   - $$ I $$ is the current flowing through the component,
   - $$ Z $$ is the impedance of the component.
@@ -226,10 +251,13 @@
 #### **4.2 Impedance ($$Z$$)**
 
 - Impedance is the AC equivalent of resistance and represents the opposition to current in an AC circuit. It is a complex quantity and includes both **resistance** and **reactance** (due to inductance and capacitance).
+
   $$
   Z = R + jX
   $$
+
   where:
+
   - $$R$$ is the **resistance** (real part),
   - $$X$$ is the **reactance** (imaginary part).
 
@@ -240,10 +268,13 @@
 
   **Total Impedance for Series and Parallel Circuits**:
   - **Series**: For series circuits, the total impedance is the sum of individual impedances:
+
     $$
     Z_{\text{total}} = Z_R + Z_L + Z_C
     $$
+
   - **Parallel**: For parallel circuits, the total impedance is the reciprocal sum of the individual impedances:
+
     $$
     \frac{1}{Z_{\text{total}}} = \frac{1}{Z_R} + \frac{1}{Z_L} + \frac{1}{Z_C}
     $$
@@ -264,9 +295,11 @@
 ![](inductiveckt.jpeg)
 
 - **Inductive Reactance**: The impedance of an inductor is given by:
+
   $$
   Z_L = j \omega L
   $$
+
 - In an **inductive circuit**, the current **lags** the voltage by $$ 90^\circ $$ (or $$ \frac{\pi}{2} $$ radians).
 - **Phase Relation**: $$ \theta = -90^\circ $$
 
@@ -275,9 +308,11 @@
 ![](capicitiveckt.jpg)
 
 - **Capacitive Reactance**: The impedance of a capacitor is given by:
+
   $$
   Z_C = \frac{1}{j \omega C}
   $$
+
 - In a **capacitive circuit**, the current **leads** the voltage by $$ 90^\circ $$.
 - **Phase Relation**: $$ \theta = 90^\circ $$
 
@@ -289,9 +324,11 @@
 
 - **Resonance Condition**: In a series RLC circuit, resonance occurs when the inductive reactance and capacitive reactance are equal in magnitude but opposite in phase.
   - Resonance frequency:
+
     $$
     \omega_0 = \frac{1}{\sqrt{LC}}
     $$
+
 - At resonance, the impedance of the circuit is purely resistive (minimum impedance), and the current is maximum.
 - **Impedance at Resonance**: $$ Z_{\text{resonance}} = R $$
 
@@ -299,12 +336,12 @@
 
 - **Resonance Condition**: In a parallel RLC circuit, resonance occurs when the total reactance (inductive and capacitive) is zero, and the circuit behaves like a purely resistive load.
   - Resonance frequency:
+
     $$
     \omega_0 = \frac{1}{\sqrt{LC}}
     $$
-- At resonance, the
 
- impedance of the circuit is at its maximum value.
+- At resonance, the impedance of the circuit is at its maximum value.
 
 
 ## **7. Analysis of Balanced Three-Phase Systems with Star-Delta Connections**
@@ -364,10 +401,13 @@ Magnetic circuits are similar to electric circuits in that they have analogies w
 ### **Magnetic Field Strength (H)**
 
 - The magnetic field strength $$ H $$ at a distance $$ r $$ from a long straight conductor carrying a current $$ I $$ is given by:
+
   $$
   H = \frac{I}{2\pi r}
   $$
+
   where:
+
   - $$ H $$ is the magnetic field strength in ampere-turns per meter (A/m),
   - $$ I $$ is the current in amperes (A),
   - $$ r $$ is the radial distance from the conductor in meters.
@@ -375,10 +415,13 @@ Magnetic circuits are similar to electric circuits in that they have analogies w
 ### **Magnetic Flux (Φ)**
 
 - Magnetic flux represents the total magnetic field passing through a surface:
+
   $$
   \Phi = B \cdot A
   $$
+
   where:
+
   - $$ B $$ is the magnetic flux density (in Tesla),
   - $$ A $$ is the area through which the field lines pass (in m²).
 
@@ -390,10 +433,13 @@ When a current-carrying conductor is placed in an external magnetic field, it ex
 ### **Force on a Current-Carrying Conductor**
 
 - The force $$ F $$ experienced by a conductor of length $$ L $$ carrying current $$ I $$ in a magnetic field $$ B $$ at an angle $$ \theta $$ is given by:
+
   $$
   F = B \cdot I \cdot L \cdot \sin \theta
   $$
+
   where:
+
   - $$ B $$ is the magnetic flux density (in Tesla),
   - $$ I $$ is the current (in Amperes),
   - $$ L $$ is the length of the conductor in the field (in meters),
@@ -417,10 +463,13 @@ The laws of electromagnetic induction describe how voltage is generated in a con
 
 1. **First Law**: An EMF is induced in a conductor when the magnetic flux linking the conductor changes.
 2. **Second Law**: The induced EMF is directly proportional to the rate of change of magnetic flux:
+
    $$
    \text{EMF} = -N \frac{d\Phi}{dt}
    $$
+
    where:
+
    - $$ N $$ is the number of turns of the coil,
    - $$ \Phi $$ is the magnetic flux.
 
@@ -442,16 +491,20 @@ The laws of electromagnetic induction describe how voltage is generated in a con
 ### **Formula for Self-Inductance**
 
 - For a coil with $$ N $$ turns, self-inductance $$ L $$ is given by:
+
   $$
   L = \frac{N \Phi}{I}
   $$
+
   where:
+
   - $$ \Phi $$ is the magnetic flux linked per turn (in Weber),
   - $$ I $$ is the current (in Amperes).
 
 ### **Energy Stored in an Inductor**
 
 - The energy ($$ W $$) stored in an inductor due to its self-inductance $$ L $$ is given by:
+
   $$
   W = \frac{1}{2} L I^2
   $$
@@ -467,10 +520,13 @@ The laws of electromagnetic induction describe how voltage is generated in a con
 ### **Formula for Mutual Inductance**
 
 - For two coils, mutual inductance $$ M $$ is given by:
+
   $$
   M = \frac{N_2 \Phi_{21}}{I_1}
   $$
+
   where:
+
   - $$ N_2 $$ is the number of turns in the second coil,
   - $$ \Phi_{21} $$ is the magnetic flux in the second coil due to the current $$ I_1 $$ in the first coil.
 
@@ -486,7 +542,9 @@ The laws of electromagnetic induction describe how voltage is generated in a con
 $$
 k = \frac{M}{\sqrt{L_1 \cdot L_2}}
 $$
+
 where:
+
 - $$ L_1 $$ and $$ L_2 $$ are the self-inductances of the two coils,
 - $$ M $$ is the mutual inductance.
 
@@ -518,9 +576,11 @@ A single-phase transformer consists of two windings, primary and secondary, woun
 The transformer operates on the principle of **mutual induction**. When an AC voltage is applied to the primary winding, it creates an alternating magnetic flux in the core, which links to the secondary winding, inducing a voltage according to Faraday's law.
 
 The induced EMF in each winding is proportional to the number of turns:
+
 $$
 \frac{V_1}{V_2} = \frac{N_1}{N_2}
 $$
+
 where $$ V_1 $$ and $$ V_2 $$ are the voltages and $$ N_1 $$ and $$ N_2 $$ are the turns in the primary and secondary windings, respectively.
 
 #### **Classification**
@@ -597,9 +657,11 @@ armature into a unidirectional output.
 A DC generator operates on **Faraday’s law of electromagnetic induction**: an EMF is induced in a conductor when it moves through a magnetic field. The rotor rotates inside the stator’s magnetic field, cutting across magnetic lines, inducing EMF in the armature coils.
 
 The induced EMF $$ E $$ is given by:
+
 $$
 E = P \cdot N \cdot \Phi \cdot Z / 60A
 $$
+
 where $$ P $$ is the number of poles, $$ N $$ is the speed in RPM, $$ \Phi $$ is flux per pole, $$ Z $$ is the total number of conductors, and $$ A $$ is the number of parallel paths.
 
 #### **Classification**
@@ -631,6 +693,7 @@ where $$ P $$ is the number of poles, $$ N $$ is the speed in RPM, $$ \Phi $$ is
 The motor works on the principle of **rotating magnetic field** and **induction**. When a three-phase supply is given to the stator, a rotating magnetic field is generated. This field induces current in the rotor (by mutual induction), producing a torque that causes it to rotate.
 
 The speed $$ N $$ of the rotor is less than the synchronous speed $$ N_s $$ of the stator field due to **slip**:
+
 $$
 \text{Slip (s)} = \frac{N_s - N}{N_s}
 $$
@@ -660,9 +723,11 @@ $$
 #### **Working Principle**
 
 The synchronous motor runs at synchronous speed, which is the speed of the rotating magnetic field:
+
 $$
 N_s = \frac{120 \cdot f}{P}
 $$
+
 where $$ f $$ is the frequency and $$ P $$ is the number of poles.
 
 Since the rotor is excited with DC, it creates a constant magnetic field. The rotating magnetic field of the stator pulls the rotor into synchronous speed by magnetic locking.
@@ -687,9 +752,11 @@ The construction is similar to synchronous motors:
 Synchronous generators work on **Faraday's law of electromagnetic induction**. When the rotor (excited by DC) rotates, the magnetic field created by the rotor poles cuts across the stator windings, inducing EMF.
 
 The output voltage frequency is given by:
+
 $$
 f = \frac{N \cdot P}{120}
 $$
+
 where $$ N $$ is the rotor speed in RPM, and $$ P $$ is the number of poles.
 
 #### **Applications**
