@@ -18,7 +18,7 @@
 
 - **Resistor (R)**: Resists the flow of electric current, converting electrical energy into heat.
   - **Ohm’s Law**: $$ V = IR $$
-  - **Power Dissipation in Resistor**: $4 P = I^2R = \frac{V^2}{R} $$
+  - **Power Dissipation in Resistor**: $$ P = I^2R = \frac{V^2}{R} $$
   - **Unit**: Ohm $$(\Omega)$$
 
 - **Capacitor (C)**: Stores energy in an electric field when connected to a power source. Capacitance $$C$$ is measured in farads (F).
